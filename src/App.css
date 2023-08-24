@@ -1,0 +1,53 @@
+#root {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+  z-index: 2;
+  background-color: white;
+  font-size: 2em; 
+  /* pointer-events: none; */
+}
+
+.form-input {
+  position: relative;
+  top: -100px;
+  z-index: 1;
+}
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.photo-item {
+  position: relative;
+}
+
+.photo-delete {
+  position: absolute;
+  font-size: 25px;
+  font-weight: 500;
+  right: -20px;
+  top: -20px;
+  cursor: pointer;
+}
+
+img {
+  border: 1px solid black;
+  background-color: white;
+}
